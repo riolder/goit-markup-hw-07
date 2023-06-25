@@ -22,6 +22,12 @@
 
 /****************phone************/
 @media screen and (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-mob-2x.jpg);
+    }
+  }
   /***************specifics*************/
   .text-style-header-a {
     text-align: center;
@@ -63,7 +69,7 @@
     padding: 24px 24px 35px 40px;
     overflow: auto;
   }
-  .social-icon {
+  .social-icons {
     fill: currentColor;
     width: 24px;
     height: 24px;
@@ -75,9 +81,31 @@
 /* tablet */
 @media screen and (min-width: 768px) {
   /*************************hero ************************************/
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-tablet2x.jpg);
+    }
+  }
   .container {
     max-width: 766px;
   }
+  .header-container {
+    height: 72px;
+  }
+  .carrent::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+
+    background: var(--color-ocean);
+  }
+
   .main-title {
     font-size: 56px;
     line-height: 1.07;
@@ -98,6 +126,9 @@
     display: none;
   }
   /* team */
+  .team-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 
   .container-team {
     max-width: 582px;
@@ -149,9 +180,27 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
+  .header-nav-lists {
+    display: block;
+  }
+  .tel-mail {
+    margin-left: auto;
+    font-style: normal;
+
+    line-height: 14px;
+  }
 }
+
 @media screen and (min-width: 1158px) {
   /* hero */
+  .logo {
+    margin-right: 120px;
+  }
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
   .main-title {
     margin-bottom: 42px;
   }
@@ -218,10 +267,45 @@
     padding-top: 8px;
     padding-left: 0px;
   }
+  .team-card {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .header-nav-lists {
+    display: flex;
+    gap: 40px;
+  }
+  .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.5;
+    font-size: 16px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .header-container {
+    height: 72px;
+  }
+  .occupation {
+    display: block;
+    padding-top: 0;
+  }
 }
+
 @media screen and (max-width: 1158px) {
   /* footer */
   .footer-sub-container {
     margin-left: 0px;
+  }
+  .header-nav-lists {
+    padding-top: 16px;
+  }
+}
+@media screen and (max-width: 417px) {
+  .adress-phone {
+    font-size: 24px;
   }
 }

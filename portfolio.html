@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -23,30 +24,100 @@
   </head>
   <body>
     <!-- web-studiio -->
+
     <header class="head">
       <div class="header-container container">
         <nav class="nav-position">
           <a href="./index.html" class="logo link">Web<span class="link-name">Studio</span></a>
           <ul class="header-nav-list list">
-            <li><a href="./index.html" class="link links">Studio</a></li>
-            <li><a href="./portfolio.html" class="link links carrent">Portfolio</a></li>
-            <li><a href="" class="link links">Contacts</a></li>
+            <li><a href="./index.html" class="link links carrent">Studio</a></li>
+            <li><a href="./portfolio.html" class="link links">Portfolio</a></li>
+            <li><a href="" class="link links carrents">Contacts</a></li>
           </ul>
         </nav>
         <address class="tel-mail">
-          <ul class="header-nav-list list">
-            <!-- mail -->
+          <ul class="header-nav-lists list">
             <li class="addrreslink">
               <a href="mailto:info@devstudio.com" class="header-link link">info@devstudio.com </a>
             </li>
-            <!-- tel -->
+
             <li class="addrreslink">
               <a href="tel:+110001111111" class="header-link link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-open" data-menu-open>
+          <svg class="phone-menu" width="32" height="22">
+            <use href="./images/icons.svg#humburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="container-menu is-hidden" data-menu>
+        <div class="menu-container-phone">
+          <div>
+            <button type="button" class="mob-menu-close" data-menu-close>
+              <svg class="vectorx" width="8" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </button>
+
+            <ul class="header-nav-list-menu list">
+              <li><a href="./index.html" class="link links link-phone current">Studio</a></li>
+              <li><a href="./portfolio.html" class="link links link-phone">Portfolio</a></li>
+              <li><a href="" class="link links link-phone">Contacts</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <address class="tel-mail">
+              <ul class="header-nav-list-menu list">
+                <li class="addrreslink">
+                  <a href="tel:+110001111111" class="header-link link adress-phone"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="addrreslink">
+                  <a href="mailto:info@devstudio.com" class="header-link link adress-mail"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <ul class="list-social-phone">
+              <li class="social-item">
+                <a href="" class="social-links" rel="noreferrer noopener">
+                  <svg class="social-icon social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-links" rel="noreferrer noopener">
+                  <svg class="social-icon social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-links" rel="noreferrer noopener">
+                  <svg class="social-icon social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-links" rel="noreferrer noopener">
+                  <svg class="social-icon social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
     <!-- portfolio -->
     <main>
       <section class="portfolio">
