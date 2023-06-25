@@ -192,6 +192,9 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .footer-input {
+    border: 1px solid var(--color-white);
+  }
   /* hero */
   .logo {
     margin-right: 120px;
